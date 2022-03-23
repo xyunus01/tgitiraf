@@ -52,7 +52,7 @@
       },
       "startmesaj": {
          "description": "Bota start komutu verilince yazılacak mesaj",
-         "value": "**Merhaba, Nasılsın** __Bana hiç söylemediğiniz itirafları söyleyebilirsiniz__ 🤭 Developer: @SakirBey1"
+         "value": "**Merhaba, [dostum](tg://settings)** __Bana hiç söylemediğiniz itirafları söyleyebilirsiniz__ 🤭 Developer: @SakirBey1"
       },
       "qrupstart": {
          "description": "Bot bir gruba katılırsa, başlatılırsa grupta yazılan mesaj",
