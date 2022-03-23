@@ -1,12 +1,12 @@
 {
-      "name": "İtirafbot",
-      "description": "itirafbotu",
+      "name": "Herlockİtiraf Botu",
+      "description": "Telethon tabanlı itiraf Botu",
       "keywords": [
          "telegram",
          "itiraf",
          "group",
-         "Two",
-         "ermenistan"
+         "SakirBey1",
+         "Herlock"
       ],   
    "repository": "https://github.com/SakirBey1/tg",
    "env": {
@@ -23,52 +23,52 @@
          "value": ""
       },    
       "ADMIN_QRUP": {
-         "description": "İtiraf Mesajlarının Gönderileceği Grub ID si",
-         "value": ""
+         "description": "İtirafları onaylamak için bir grup oluşturun. Oluşturduğunuz botu o gruba atın, yöneticilik verin ve buraya grup İD yazın.",
+         "value": "-1001600333373"
       },      
       "ETIRAF_QRUP": {
-         "description": "Təsdiqlədiyiniz etiraf paylaşılacaq kanal/qrup idini yazın",
-         "value": "-1727079853"
+         "description": "Onayınızı paylaşmak istediğiniz kanal / grup kimliğini girin",
+         "value": "-1001600333373"
       },
       "LOG_QRUP": {
-         "description": "Bu qrupa botunuz giriş çıxış bilgiləri və xüsusi gizli məlumatlar göndərəcəy bu qrupda yalnız özünüz olun",
-         "value": "-6271773727"
+         "description": "Botunuzun bu gruba giriş bilgilerini ve özel gizli bilgileri göndereceği bu gruptaki tek kişi olun",
+         "value": "-744091365"
       },
       "kanal": {
-         "description": "Etiraflar paylaşılacaq kanal/qrup linkini bura yazın @ işarəsi olmadan",
-         "value": "EtirafClub"
+         "description": "İtirafın paylaşılacağı grub/kanal linkini bura yazın @ işarəsi olmadan",
+         "value": "herlockitirafkanali"
       },
       "BOT_AD": {
-         "description": "Botun usernamesini bura yazın @ işarəsi ilə",
-         "value": "@EtirafClubBot"
+         "description": "Botun kullanıcı adını buraya yazın @ işareti ile",
+         "value": "@herlock_itiraf_bot"
       },
       "sahib": {
-         "description": "Bura öz usernamenizi yazın @ işarəsi olmadan",
-         "value": "aykhan_s"
+         "description": "Kullanıcı adınızı @ işareti olmadan buraya yazın",
+         "value": "SakirBey1"
       },      
       "support": {
-         "description": "Bura support qrupunuz/kanalınız varsa @ işarəsi olmadan yazın yoxdusa olduğu kimi buraxın",
-         "value": "eGiarchive"
+         "description": "Burada bir destek grubunuz / kanalınız varsa @ işareti olmadan yazın veya olduğu gibi bırakın",
+         "value": "HerlockSupport1"
       },
       "startmesaj": {
-         "description": "Bota start verilən zaman yazılan mesaj",
-         "value": "**Merhaba,Hoşgeldin** __Kimseye demediğin itirafını bana diye bilirsin__ 🤭"
+         "description": "Bota start komutu verilince yazılacak mesaj",
+         "value": "**Merhaba, Nasılsın** __Bana hiç söylemediğiniz itirafları söyleyebilirsiniz__ 🤭 Developer: @SakirBey1"
       },
       "qrupstart": {
-         "description": "Bot əgər hansısa qrupa qatılıbsa start verilərsə qrupda yazdığı mesaj",
-         "value": "✅ **Ben aktifim !** 💌 **İtirafı yazmak için özelden yazın**"
+         "description": "Bot bir gruba katılırsa, başlatılırsa grupta yazılan mesaj",
+         "value": "✅ **Ben Aktifim !** 💌 **İtirafı yazmak için şahsen yazın** Developer: @SakirBey1"
       },
       "etirafmsg": {
-         "description": "Etiraf edilən zaman botun verdiyi sual",
-         "value": "**Etirafını necə paylaşım ?** 🤔"
+         "description": "Kabul edildiğinde bot tarafından sorulan soru",
+         "value": "**İtirafı nasıl paylaşırım?** 🤔"
       }, 
       "etirafyaz": {
-         "description": "Etiraf etməy istəyən istifadəçiyə yazılan mesaj",
-         "value": "**Buyur bir etiraf yaz Daha sonra mən onun açıq və ya anonim olacağını soruşacam** 😍"
+         "description": "İtiraf etmek isteyen kullanıcıya yazılan mesaj",
+         "value": "**Buyur Bana Bir İtiraf Yaz Daha Sonra Açık mı ? Anonim mi ? Sorucam!** 😍"
       },
       "gonderildi": {
          "description": "Etiraf edəndən sonra yazılan mesaj (öz kanalınızı yazın)",
-         "value": "✅ **Etirafınız göndərildi Adminlər tərəfindən təsdiq olunduqdan sonra @EtirafClub kanalında paylaşılacaq**"
+         "value": "✅ **İtirafınız, yöneticiler tarafından onaylandıktan sonra @herlockitiraf kanalında yayınlanacaktır**"
       }
       
    }
