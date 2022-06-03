@@ -1,4 +1,6 @@
-#31cekenmaymun
+# ╔═══════════════════╗ 
+# ║ Developer ŞakirBey║
+# ╚═══════════════════╝ 
 
 import codecs
 import heroku3
