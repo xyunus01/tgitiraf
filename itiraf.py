@@ -171,3 +171,4 @@ async def sil(event):
 print(f"{anonim}")
 print(f"{aciq}")
 client.run_until_disconnected()
+
