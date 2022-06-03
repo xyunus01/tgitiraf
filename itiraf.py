@@ -36,7 +36,7 @@ async def start(event):
                       [
                        Button.inline("💌 İtiraf Yaz", data="etiraf")
                       ],
-                      [Button.url('📜 İtiraf Kanalı', f'https://t.me/eitirafevi')],
+                      [Button.url('📜 İtiraf Kanalı', f'https://t.me/suskunlarkanali')],
                       [Button.url('📣 Destek', f'https://t.me/{support}'),
                        Button.url('👨🏻‍💻 Sahibim', f'https://t.me/{sahib}')]
                     ),
