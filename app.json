@@ -24,19 +24,19 @@
       },    
       "ADMIN_QRUP": {
          "description": "İtirafları onaylamak için bir grup oluşturun. Oluşturduğunuz botu o gruba atın, yöneticilik verin ve buraya grup İD yazın.",
-         "value": "-1001600333373"
+         "value": "-1001601038464"
       },      
       "ETIRAF_QRUP": {
          "description": "Onayınızı paylaşmak istediğiniz kanal / grup kimliğini girin",
-         "value": "-1001600333373"
+         "value": "-1001627150191"
       },
       "LOG_QRUP": {
          "description": "Botunuzun bu gruba giriş bilgilerini ve özel gizli bilgileri göndereceği bu gruptaki tek kişi olun",
-         "value": "-744091365"
+         "value": "-1001604147250"
       },
       "kanal": {
          "description": "İtirafın paylaşılacağı grub/kanal linkini bura yazın @ işarəsi olmadan",
-         "value": "herlockitirafkanali"
+         "value": "suskunlarkanali"
       },
       "BOT_AD": {
          "description": "Botun kullanıcı adını buraya yazın @ işareti ile",
