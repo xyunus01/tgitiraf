@@ -35,12 +35,12 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      isim = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await client.send_message(log_qrup, f"ℹ️ **Yeni Kullanıcı -** {isim}")
+     await client.send_message(log_qrup, f"👤 **Yeni Kullanıcı -** {isim}")
      return await event.reply(f"{isim} {startmesaj}", buttons=(
                       [
                        Button.inline("💌 İtiraf Yaz", data="etiraf")
                       ],
-                      [Button.url('📜 İtiraf Kanalı', f'https://t.me/suskunlarkanali')],
+                      [Button.url('📜 İtiraf Kanalı', f'https://t.me/{kanal}')],
                       [Button.url('📣 Destek', f'https://t.me/{support}'),
                        Button.url('👨🏻‍💻 Sahibim', f'https://t.me/{sahib}')]
                     ),
@@ -102,7 +102,7 @@ async def anonim(event):
      gonderen = f"[{usr.first_name}](tg://user?id={usr.id})"
      etiraf_eden = "Anonim"
      yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n📜 **İtirafı -** {mesaj} \n\n📣 İtirafınızı {botad} -a edin")
-     tesdiq = await yeni_etiraf.reply("İtirafın Onaylanması ?", buttons=(
+     tesdiq = await yeni_etiraf.reply("ℹ️ {gonderen} Anonim itiraf yazdı. Onaylansın mı?", buttons=(
                       [
                        Button.inline("✅ Onayla", data="tesdiq"
                        ),
@@ -110,7 +110,6 @@ async def anonim(event):
                       ]
                     ),
                     link_preview=False)
-    await client.send_message(log_qrup, f"ℹ️ {gonderen} __Anonim İtiraf Yazdı__")
     await event.edit(f"{gonderildi}", buttons=(
                       [
                        Button.inline("💌 Yeni İtiraf", data="etiraf"),
