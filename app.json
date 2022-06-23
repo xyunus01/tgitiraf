@@ -24,7 +24,7 @@
       },    
       "ADMIN_QRUP": {
          "description": "İtirafları onaylamak için bir grup oluşturun. Oluşturduğunuz botu o gruba atın, yöneticilik verin ve buraya grup İD yazın.",
-         "value": "-1001601038464"
+         "value": "-1001662075850"
       },      
       "ETIRAF_QRUP": {
          "description": "Onayınızı paylaşmak istediğiniz kanal / grup kimliğini girin",
@@ -32,43 +32,43 @@
       },
       "LOG_QRUP": {
          "description": "Botunuzun bu gruba giriş bilgilerini ve özel gizli bilgileri göndereceği bu gruptaki tek kişi olun",
-         "value": "-1001604147250"
+         "value": "-1001662075850"
       },
       "kanal": {
          "description": "İtirafın paylaşılacağı grub/kanal linkini bura yazın @ işarəsi olmadan",
-         "value": "suskunlarkanali"
+         "value": ""
       },
       "BOT_AD": {
          "description": "Botun kullanıcı adını buraya yazın @ işareti ile",
-         "value": "@herlock_itiraf_bot"
+         "value": "@"
       },
       "sahib": {
          "description": "Kullanıcı adınızı @ işareti olmadan buraya yazın",
-         "value": "SakirBey1"
+         "value": ""
       },      
       "support": {
          "description": "Burada bir destek grubunuz / kanalınız varsa @ işareti olmadan yazın veya olduğu gibi bırakın",
-         "value": "HerlockSupport1"
+         "value": ""
       },
       "startmesaj": {
          "description": "Bota start komutu verilince yazılacak mesaj",
-         "value": "**Merhaba, [dostum](tg://settings)** __Bana hiç söylemediğiniz itirafları söyleyebilirsiniz__ 🤭 Developer: @SakirBey1"
+         "value": "**Merhaba,** __Bana hiç söylemediğiniz itirafları söyleyebilirsiniz__ 🤭"
       },
       "qrupstart": {
          "description": "Bot bir gruba katılırsa, başlatılırsa grupta yazılan mesaj",
-         "value": "✅ **Ben Aktifim !** 💌 **İtirafı yazmak için şahsen yazın** Developer: @SakirBey1"
+         "value": "✅ **Ben Aktifim !** 💌 **İtirafı yazmak için şahsen yazın** Developer: @emiriviaa"
       },
       "etirafmsg": {
          "description": "Kabul edildiğinde bot tarafından sorulan soru",
-         "value": "**İtirafı nasıl paylaşırım?** 🤔"
+         "value": "**İtirafını nasıl paylaşalım?** 🤔"
       }, 
       "etirafyaz": {
          "description": "İtiraf etmek isteyen kullanıcıya yazılan mesaj",
-         "value": "**Buyur Bana Bir İtiraf Yaz Daha Sonra Açık mı ? Anonim mi ? Sorucam!** 😍"
+         "value": "**Selam! Bir itiraf gönder. Daha sonra Açık mı yoksa Anonim mi diye soracağım!** 😍"
       },
       "gonderildi": {
          "description": "Etiraf edəndən sonra yazılan mesaj (öz kanalınızı yazın)",
-         "value": "✅ **İtirafınız, yöneticiler tarafından onaylandıktan sonra @herlockitiraf kanalında yayınlanacaktır**"
+         "value": "✅ **İtirafınız, yöneticiler tarafından onaylandıktan sonra @biritirafimvar kanalında yayınlanacaktır.**"
       }
       
    }
