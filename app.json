@@ -11,7 +11,7 @@
    "repository": "https://github.com/SakirBey1/tg",
    "env": {
       "TOKEN": {
-         "description": "Botunuzun tokenini bura yazın",
+         "description": "Botunuzun tokenini buraya yazın",
          "value": ""
       },
       "APP_ID": {
@@ -24,14 +24,14 @@
       },    
       "ADMIN_QRUP": {
          "description": "İtirafları onaylamak için bir grup oluşturun. Oluşturduğunuz botu o gruba atın, yöneticilik verin ve buraya grup İD yazın.",
-         "value": "-1001662075850"
+         "value": ""
       },      
       "ETIRAF_QRUP": {
-         "description": "Onayınızı paylaşmak istediğiniz kanal / grup kimliğini girin",
-         "value": "-1001627150191"
+         "description": "İtiraf onaylandıktan sonra itirafın paylaşılacağı grup/kanal idsi yazın ",
+         "value": ""
       },
       "LOG_QRUP": {
-         "description": "Botunuzun bu gruba giriş bilgilerini ve özel gizli bilgileri göndereceği bu gruptaki tek kişi olun",
+         "description": "Botunuzun göndereceği log mesajları için kanal veya grup idsi. Admin grup idsi girebilirsiniz",
          "value": "-1001662075850"
       },
       "kanal": {
