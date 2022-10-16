@@ -154,7 +154,6 @@ async def tesdiq(event):
       etiraff = await tesdiq.get_reply_message()
       etiraf = etiraff.text
       await client.send_message(etiraf_qrup, etiraf)
-      await etiraff.delete()
       await event.edit(f"✅ **İtiraf Onaylandı**")
 
       
