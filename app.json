@@ -38,7 +38,7 @@
          "description": "İtirafın paylaşılacağı grub/kanal linkini bura yazın @ işarəsi olmadan",
          "value": ""
       },
-      "BOT_AD": {
+      "BOT_MSG": {
          "description": "Botun kullanıcı adını buraya yazın @ işareti ile",
          "value": "@"
       },
