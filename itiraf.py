@@ -84,8 +84,8 @@ async def yeni_mesaj(event: events.NewMessage.Event):
     if not mesaj == "/start":
       await client.send_message(event.chat_id, f"{etirafmsg}", buttons=(
                       [
-                      Button.inline("🔒 Anonim", data="anonim"),
-                      Button.inline("🌟 Açık", data="aciq")
+                      Button.inline("🙅🏻‍♂️ Hayır", data="anonim"),
+                      Button.inline("👍 Evet", data="aciq")
                       ],
                       [
                       Button.inline("🏠 Ana Sayfa", data="start")
