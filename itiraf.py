@@ -102,7 +102,7 @@ async def anonim(event):
      gonderen = f"[{usr.first_name}](tg://user?id={usr.id})"
      etiraf_eden = "Anonim"
      yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n\n📜 **İtirafı:** \n\n{mesaj} \n\n{botmsg}")
-     tesdiq = await yeni_etiraf.reply(f"ℹ️ {gonderen} Anonim itiraf yazdı. Onaylansın mı?", buttons=(
+     tesdiq = await yeni_etiraf.reply(f"ℹ️ {gonderen} Anonim itiraf gönderdi. Onaylansın mı?", buttons=(
                       [
                        Button.inline("✅ Onayla", data="tesdiq"
                        ),
@@ -125,9 +125,9 @@ async def aciq(event):
     global mesaj
     global tesdiq
     async for usr in client.iter_participants(event.chat_id):
-     etiraf_eden = f"[{usr.first_name}](tg://user?id={usr.id})"
+     gonderen = f"[{usr.first_name}](tg://user?id={usr.id})"
      yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n\n📜 **İtirafı:**\n\n{mesaj} \n\n{botmsg}")
-     tesdiq = await yeni_etiraf.reply("Onaylansın mı?", buttons=(
+     tesdiq = await yeni_etiraf.reply(f"{gonderen} ismi açık şekilde itiraf gönderdi. Onaylansın mı?", buttons=(
                       [
                        Button.inline("✅ Onayla", data="tesdiq"
                        ),
@@ -135,7 +135,6 @@ async def aciq(event):
                       ]
                     ),
                     link_preview=False)
-    await client.send_message(log_qrup, f"ℹ️ {etiraf_eden} __Açık İtiraf Yazdı__")
     await event.edit(f"{gonderildi}", buttons=(
                       [
                        Button.inline("💌 Yeni İtiraf", data="etiraf"),
