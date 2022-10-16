@@ -18,7 +18,7 @@ from telethon import TelegramClient, events
 from telethon.tl.functions.messages import ForwardMessagesRequest
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
-from config import client, admin_qrup, etiraf_qrup, kanal, log_qrup, etirafmsg, startmesaj, qrupstart, botad, qrupstart, gonderildi, etirafyaz, sahib, support
+from config import client, admin_qrup, etiraf_qrup, kanal, log_qrup, etirafmsg, startmesaj, qrupstart, botmsg, qrupstart, gonderildi, etirafyaz, sahib, support
 
 logging.basicConfig(
     level=logging.INFO,
@@ -101,7 +101,7 @@ async def anonim(event):
     async for usr in client.iter_participants(event.chat_id):
      gonderen = f"[{usr.first_name}](tg://user?id={usr.id})"
      etiraf_eden = "Anonim"
-     yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n\n📜 **İtirafı:** \n\n{mesaj} \n\n📣 İtirafınızı {botad} -a edin")
+     yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n\n📜 **İtirafı:** \n\n{mesaj} \n\n{botmsg}")
      tesdiq = await yeni_etiraf.reply(f"ℹ️ {gonderen} Anonim itiraf yazdı. Onaylansın mı?", buttons=(
                       [
                        Button.inline("✅ Onayla", data="tesdiq"
@@ -126,8 +126,7 @@ async def aciq(event):
     global tesdiq
     async for usr in client.iter_participants(event.chat_id):
      etiraf_eden = f"[{usr.first_name}](tg://user?id={usr.id})"
-     sonluq = f"\n💌 İtirafınızı {botad} -a edin"
-     yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n\n📜 **İtirafı:**\n\n{mesaj} \n{sonluq}")
+     yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n\n📜 **İtirafı:**\n\n{mesaj} \n\n{botmsg}")
      tesdiq = await yeni_etiraf.reply("Onaylansın mı?", buttons=(
                       [
                        Button.inline("✅ Onayla", data="tesdiq"
