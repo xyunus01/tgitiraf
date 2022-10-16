@@ -126,7 +126,7 @@ async def aciq(event):
     global tesdiq
     async for usr in client.iter_participants(event.chat_id):
      gonderen = f"[{usr.first_name}](tg://user?id={usr.id})"
-     yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n\n📜 **İtirafı:**\n\n{mesaj} \n\n{botmsg}")
+     yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {gonderen} \n\n📜 **İtirafı:**\n\n{mesaj} \n\n{botmsg}")
      tesdiq = await yeni_etiraf.reply(f"{gonderen} ismi açık şekilde itiraf gönderdi. Onaylansın mı?", buttons=(
                       [
                        Button.inline("✅ Onayla", data="tesdiq"
