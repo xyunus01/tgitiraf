@@ -43,7 +43,7 @@ async def start(event):
                       ],
                       [Button.url('📜 İtiraf Kanalı', f'https://t.me/{kanal}')],
                       [Button.url('⚜️ Grubumuz', f'https://t.me/{support}'),
-                       Button.url('👨🏻‍💻 Developer', f'https://t.me/{sahib}')]
+                       Button.url('⭐️ Sahip', f'https://t.me/{sahib}')]
                     ),
                     link_preview=False)
 
@@ -62,7 +62,7 @@ async def handler(event):
                       ],
                       [Button.url('📜 İtiraf Kanalı', f'https://t.me/{kanal}')],
                       [Button.url('⚜️ Grubumuz', f'https://t.me/{support}'),
-                       Button.url('👨🏻‍💻 Developer', f'https://t.me/{sahib}')]
+                       Button.url('⭐️ Sahip', f'https://t.me/{sahib}')]
                     ),
                     link_preview=False)
 
