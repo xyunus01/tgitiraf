@@ -39,8 +39,8 @@
          "value": ""
       },
       "BOT_MSG": {
-         "description": "Botun kullanıcı adını buraya yazın @ işareti ile",
-         "value": "@"
+         "description": "Botun itiraf metninde en alt kısımda yazacak metin",
+         "value": "İtirafınızı @userbot -a edebilirsiniz. 😊"
       },
       "sahib": {
          "description": "Kullanıcı adınızı @ işareti olmadan buraya yazın",
@@ -69,6 +69,10 @@
       "gonderildi": {
          "description": "Etiraf edəndən sonra yazılan mesaj (öz kanalınızı yazın)",
          "value": "✅ **İtirafınız, yöneticiler tarafından onaylandıktan sonra @biritirafimvar kanalında yayınlanacaktır.**"
+      },
+      "KARALISTE": {
+         "description": "Yasaklanmasını istediğiniz kullanıcıların idleri",
+         "value": ""
       }
       
    }
