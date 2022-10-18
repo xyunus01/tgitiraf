@@ -49,7 +49,7 @@ async def start(event):
                     ),
                     link_preview=False)
      else:
-       return event.reply("⛔️ Bot'dan yasaklandığınız için işleminize devam edilemez.")
+       return await event.reply("⛔️ Bot'dan yasaklandığınız için işleminize devam edilemez.")
 
 
   if event.is_group:
