@@ -19,7 +19,7 @@ from telethon import TelegramClient, events
 from telethon.tl.functions.messages import ForwardMessagesRequest
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
-from config import client, admin_qrup, etiraf_qrup, kanal, log_qrup, etirafmsg, startmesaj, qrupstart, botmsg, qrupstart, gonderildi, etirafyaz, sahib, support
+from config import client, admin_qrup, etiraf_qrup, kanal, log_qrup, etirafmsg, startmesaj, qrupstart, botmsg, qrupstart, gonderildi, etirafyaz, sahib, support, KARALISTE
 
 logging.basicConfig(
     level=logging.INFO,
@@ -35,9 +35,11 @@ mesaj = ["Mesaj Görünmedi"]
 async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
-     isim = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await client.send_message(log_qrup, f"👤 **Yeni Kullanıcı -** {isim}")
-     return await event.reply(f"{isim} {startmesaj}", buttons=(
+     sender = await event.get_sender()
+     if not sender.id in KARALISTE:
+       isim = f"[{usr.first_name}](tg://user?id={usr.id}) "
+       await client.send_message(log_qrup, f"👤 **Yeni Kullanıcı -** {isim}")
+       return await event.reply(f"{isim} {startmesaj}", buttons=(
                       [
                        Button.inline("💌 İtiraf Yaz", data="etiraf")
                       ],
@@ -46,6 +48,8 @@ async def start(event):
                        Button.url('⭐️ Sahip', f'https://t.me/{sahib}')]
                     ),
                     link_preview=False)
+     else:
+       return event.reply("⛔️ Bot'dan yasaklandığınız için işleminize devam edilemez.")
 
 
   if event.is_group:
