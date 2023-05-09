@@ -12,31 +12,31 @@
    "env": {
       "TOKEN": {
          "description": "Botunuzun tokenini buraya yazın",
-         "value": ""
+         "value": "6256855944:AAEvfoexkpJ_Y0tPkwdEP2JYW1uza-SSudQ"
       },
       "APP_ID": {
          "description": "my.telegram.org adresindən APP ID alın.",
-         "value": ""
+         "value": "12965344"
       },
       "API_HASH": {
          "description": "my.telegram.org adresindən API HASH alın",
-         "value": ""
+         "value": "ab06456c190e27560182fbce2887efd3"
       },    
       "ADMIN_QRUP": {
          "description": "İtirafları onaylamak için bir grup oluşturun. Oluşturduğunuz botu o gruba atın, yöneticilik verin ve buraya grup İD yazın.",
-         "value": ""
+         "value": "-1001924956339"
       },      
       "ETIRAF_QRUP": {
          "description": "İtiraf onaylandıktan sonra itirafın paylaşılacağı grup/kanal idsi yazın ",
-         "value": ""
+         "value": "-1001924956339"
       },
       "LOG_QRUP": {
          "description": "Botunuzun göndereceği log mesajları için kanal veya grup idsi. Admin grup idsi girebilirsiniz",
-         "value": "-1001662075850"
+         "value": "-1001924956339"
       },
       "kanal": {
          "description": "İtirafın paylaşılacağı grub/kanal linkini bura yazın @ işarəsi olmadan",
-         "value": ""
+         "value": "katanaitiraf"
       },
       "BOT_MSG": {
          "description": "Botun itiraf metninde en alt kısımda yazacak metin",
@@ -44,11 +44,11 @@
       },
       "sahib": {
          "description": "Kullanıcı adınızı @ işareti olmadan buraya yazın",
-         "value": ""
+         "value": "yusufonly"
       },      
       "support": {
          "description": "Burada bir destek grubunuz / kanalınız varsa @ işareti olmadan yazın veya olduğu gibi bırakın",
-         "value": ""
+         "value": "katanaprochat"
       },
       "startmesaj": {
          "description": "Bota start komutu verilince yazılacak mesaj",
