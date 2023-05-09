@@ -10,7 +10,7 @@ from telethon import TelegramClient, events
 
 
 
-api_id = int(os.environ.get("APP_ID"))
+api_id = os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
 # Telethon 
